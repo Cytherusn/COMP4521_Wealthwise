@@ -22,39 +22,54 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 }
 ```
-Core Functionalities
- Personal Finance Management
- Dashboard: A summary view with total balance, income vs. expense chart
-(using a library like MPAndroidChart), and recent transactions.
- Categorization: Pre-defined and customizable categories (e.g., Food,
-Transport, Salary)
- Add Transactions: A simple form to log income or expenses with amount,
-category, date, note, and payment method.
- Search Transactions: A searchable and filterable interfaceto find specific
-transactions by title, category, or date.
- View Transactions: A filterable and searchable list of all transactions.
- Budgeting: Set monthly budgets for categories and receive notifications when
-approaching the limit.
- Group Finance Management
- Create/Join Groups: Users can create a group (e.g., "Paris Trip 2024") and
-invite others via a unique code or link.
- Group Expenses: Any member can add an expense paid by one member on
-behalf of the group.
- Balance Settlement: The app automatically calculates who owes whom and
-provides a clear summary. Features a "Settle Up" button to mark debts as
-cleared.
-COMP4521 Mobile Application Development Proposal
- Group Dashboard: Shows total group expenses, individual contributions, and a
-feed of recent group activities.
- Dynamic Chart Visualization
- Immediate visual insights: Converts transaction data into immediate,
-actionable visual insights
- Group by time: Views by Monthly, Weekly, or Custom period
- Data Categorization: Pie breakdown from sample data: e.g. Food 35%,
-Transport 20%, Entertainment 15%, Utilities 15%, Shopping 10%, Other 5%
- User Login and Account Management
- Privacy controls: Users can set granular visibility for profiles, transactions, and
-group entries (Private / Group / Public)
- User Data management: bulk edit or permanently delete records with staged
-confirmations
- Customized settings: save settings of localization and theme
+## 3.1 Core Functionalities
+
+### Personal Finance Management
+- **Dashboard**  
+  Summary view showing total balance, income vs. expense chart (using **MPAndroidChart**), and recent transactions.
+- **Categorization**  
+  Pre-defined and fully customizable categories (e.g., Food, Transport, Salary, Entertainment, Utilities, etc.).
+- **Add Transactions**  
+  Simple form to log income or expenses with fields: amount, category, date, note, and payment method.
+- **Search & Filter Transactions**  
+  Searchable and filterable interface by title, category, date range, or type (income/expense).
+- **View Transactions**  
+  Complete, filterable, and searchable list of all personal transactions.
+- **Budgeting**  
+  Set monthly (or custom period) budgets per category with push notifications when approaching or exceeding limits.
+
+### Group Finance Management (Split-wise Style)
+- **Create/Join Groups**  
+  Users can create a group (e.g., "Paris Trip 2024", "Flatmates 2025") and invite others via unique code or shareable link.
+- **Group Expenses**  
+  Any member can add an expense paid by one person on behalf of the group (supports unequal splits and percentage/custom amounts).
+- **Balance Settlement**  
+  Automatic calculation of who owes whom + simplified settlement view. Includes **"Settle Up"** button to mark debts as cleared.
+- **Group Dashboard**  
+  Displays total group expenses, individual contributions, balance summary  status, and a feed of recent group activities.
+
+### Dynamic Chart Visualization
+- Real-time visual insights from transaction data
+- Time-period grouping: **Daily**, **Weekly**, **Monthly**, **Yearly**, or **Custom range**
+- Category breakdown (example pie chart):
+  - Food – 35%
+  - Transport – 20%
+  - Entertainment – 15%
+  - Utilities – 15%
+  - Shopping – 10%
+  - Other – 5%
+- Additional chart types: bar charts for income/expense trends, line charts for balance over time
+
+### User Login & Account Management
+- Secure user authentication (email/password + optional biometric login)
+- **Privacy Controls**  
+  Granular visibility settings for profile, personal transactions, and group entries: **Private / Friends-only / Group-only / Public**
+- **Data Management**  
+  Bulk edit, export, or permanently delete records with multi-stage confirmation
+- **Customization**  
+  - Theme (Light / Dark / System)
+  - Language & localization
+  - Currency selection
+  - Date format preferences
+  - Default category and payment method settings
+
